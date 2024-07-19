@@ -1,3 +1,10 @@
+/**
+ * A React component that renders a form for editing an existing note.
+ * 
+ * @param onSubmit - A function that is called when the note form is submitted, with the updated note data.
+ * @param onAddTag - A function that is called when a new tag is added, with the new tag.
+ * @param availableTags - An array of available tags that can be selected for the note.
+ */
 import { NoteData, Tag } from "./App";
 import  NoteForm  from "./NoteForm";
 import { useNote } from "./NoteLayout";

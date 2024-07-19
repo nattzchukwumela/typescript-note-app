@@ -1,3 +1,16 @@
+/**
+ * The `NoteList` component is responsible for rendering a list of notes, allowing the user to filter and search notes, and providing functionality to edit tags associated with the notes.
+ *
+ * The component receives the following props:
+ * - `availableTags`: an array of `Tag` objects representing all the available tags that can be associated with notes.
+ * - `notes`: an array of `SimplifiedNote` objects representing the notes to be displayed.
+ * - `onDeleteTag`: a function that is called when a tag needs to be deleted.
+ * - `onUpdateTag`: a function that is called when a tag needs to be updated.
+ *
+ * The `NoteList` component renders a form with a title input and a multi-select dropdown for tags, which are used to filter the displayed notes. It also renders a list of `NoteCard` components, one for each note that matches the current filters.
+ *
+ * The `EditTagsModal` component is a modal dialog that allows the user to edit the labels of existing tags.
+ */
 import React, { useMemo, useState } from 'react'
 import { Col, Row, Stack, Button, Form, Card, Badge, Modal, ModalTitle } from 'react-bootstrap'
 import { Link } from 'react-router-dom';

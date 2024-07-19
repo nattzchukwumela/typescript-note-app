@@ -1,3 +1,11 @@
+/**
+ * Renders a note component that displays the note's title, tags, and markdown content.
+ * Provides buttons to edit the note, delete the note, and navigate back to the home page.
+ *
+ * @param {NoteProps} props - The props for the note component.
+ * @param {(id: string) => void} props.onDelete - A function to delete the note.
+ * @returns {JSX.Element} - The rendered note component.
+ */
 import { useNote } from './NoteLayout';
 import { Badge, Col, Row, Stack, Button } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';

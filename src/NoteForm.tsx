@@ -1,3 +1,16 @@
+/**
+ * A React component that renders a form for creating or editing a note.
+ * 
+ * The `NoteForm` component takes in several props:
+ * - `onSubmit`: a function that is called when the form is submitted, with the note data as an argument
+ * - `onAddTag`: a function that is called when a new tag is created, with the new tag as an argument
+ * - `availableTags`: an array of existing tags that can be selected
+ * - `title`: the initial title of the note
+ * - `markdown`: the initial markdown content of the note
+ * - `tags`: the initial tags associated with the note
+ * 
+ * The component renders a form with fields for the note title, markdown content, and tags. The tags field uses a creatable React Select component that allows the user to create new tags. When the form is submitted, the `onSubmit` function is called with the note data.
+ */
 import { FormEvent, useRef, useState } from "react";
 import { Form, Stack, Row, Col, Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";

@@ -1,3 +1,10 @@
+/**
+ * The main React component for the application. It handles the routing and management of notes and tags.
+ *
+ * - Manages the state of notes and tags using the `useLocalStorage` hook.
+ * - Provides functions to create, update, and delete notes and tags.
+ * - Renders the appropriate components based on the current route, including the `NoteList`, `NewNote`, `Note`, and `EditNote` components.
+ */
 import React, { useMemo } from "react";
 import { Container } from "react-bootstrap";
 import { Routes, Route, Navigate } from "react-router-dom";

@@ -1,3 +1,8 @@
+/**
+ * Applies a smooth transition effect to the `.card` element when it is hovered over or focused.
+ * The transition includes a vertical translation of 5 pixels and a box shadow effect.
+ * This provides a subtle hover/focus effect to make the card stand out.
+ */
 .card {
    transition: translate ease-in-out 100ms, box-shadow ease-in-out 100ms;
 }
